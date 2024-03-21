@@ -1,0 +1,217 @@
+body{
+    font-family: verdana;
+    background-color:#fefae0;
+    color:  #000000;
+}
+
+/* ------------Barra de Navegacion */
+ul,li{
+    list-style: none;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+header{
+    margin: 9px;
+    max-width: 100%;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+}
+.list-nav{
+    display: flex;
+    gap: 1rem;
+    margin-top:8px ;
+}
+.link-nav{
+    color:#333;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 900;
+     
+     border-radius: 5px;
+     padding: 3px;
+}
+
+
+
+/* --------------------Querry de menu--------------- */
+
+@media screen and (max-width: 800px) { 
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      
+      
+    
+    }
+    .abrir-menu{
+        color: black;
+        border: 0;
+
+    }
+    .cerrar-menu{
+     
+        color:rgb(216, 216, 225);
+        border: 0;
+        font-size: 30px;
+       background-color:  #333;;
+        
+    }
+   
+    .nav{
+         
+        opacity: 0;
+        visibility: hidden;      
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+   
+        position: absolute;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #333;
+        align-items: center;
+        padding: 3rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .9);
+       
+
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .list-nav{
+        margin: 80px auto;
+       flex-direction: column;
+       align-items: end;
+       gap: 5rem;
+    }
+  .link-nav{
+    color: white;
+  }
+    
+}
+
+
+
+  /* --------------------------------  INTROO --------------------------- */
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+  
+}
+.intro{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 120px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro h1{
+    font-size: 30px;
+    line-height: none;
+}
+.intro h2{
+    font-size: 22px;
+}
+a{
+    color: black;
+    margin-right: 12px;
+    font-weight: 900;
+}
+.avatar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.avatar,img{
+   border-radius: 25px;
+   height: 350px;
+}
+
+/*---------------------proyectoss y trofeos---------------   */
+.intro-project{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 70px;
+}
+.text-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-project h2{
+    font-weight: 900;
+    font-size:20px;
+}
+.text-project  p{
+
+    color: #909497 ;
+}
+
+.trofeos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.trofeos img{
+    height: 370px;
+    width: 350px;
+}
+.text-project .misgoles {
+  margin-top: 70px;
+}
+.linea{
+    border: 1px solid;
+    color: #3333;
+}
+footer{
+     font-family: verdana;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 23px;
+;
+}
+footer p {
+    font-weight: 900;
+    font-family: 500px;
+
+}
+
+/* -------------------- ctrl+CyK COMENTAS media queries-------------------- */
+
+@media (width < 1000px){
+   .intro{
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+   }
+   .intro-project{
+    grid-template-columns: 100%;
+    text-align: center;
+   }
+}
